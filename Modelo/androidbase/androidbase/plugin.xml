@@ -2,4 +2,67 @@
 <?eclipse version="3.0"?>
 <plugin>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated androidbase -->
+      <package
+            uri="http:///androidbase.ecore"
+            class="androidbase.androidbasePackage"
+            genModel="model/androidbase.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated androidbase -->
+      <package
+            uri="http:///androidbase/domain.ecore"
+            class="androidbase.domain.DomainPackage"
+            genModel="model/androidbase.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated androidbase -->
+      <package
+            uri="http:///androidbase/ui.ecore"
+            class="androidbase.ui.UiPackage"
+            genModel="model/androidbase.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated androidbase -->
+      <package
+            uri="http:///androidbase/ui/viewmodels.ecore"
+            class="androidbase.ui.viewmodels.ViewmodelsPackage"
+            genModel="model/androidbase.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated androidbase -->
+      <package
+            uri="http:///androidbase/ui/viewmodels/contenedorloginbaseviewmodel.ecore"
+            class="androidbase.ui.viewmodels.contenedorloginbaseviewmodel.ContenedorloginbaseviewmodelPackage"
+            genModel="model/androidbase.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated androidbase -->
+      <package
+            uri="http:///androidbase/ui/viewmodels/contenedorloginv1viewmodel.ecore"
+            class="androidbase.ui.viewmodels.contenedorloginv1viewmodel.Contenedorloginv1viewmodelPackage"
+            genModel="model/androidbase.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated androidbase -->
+      <package
+            uri="http:///androidbase/ui/viewmodels/contenedorloginv2viewmodel.ecore"
+            class="androidbase.ui.viewmodels.contenedorloginv2viewmodel.Contenedorloginv2viewmodelPackage"
+            genModel="model/androidbase.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated androidbase -->
+      <package
+            uri="http:///androidbase/ui/viewmodels/contenedorloginv3viewmodel.ecore"
+            class="androidbase.ui.viewmodels.contenedorloginv3viewmodel.Contenedorloginv3viewmodelPackage"
+            genModel="model/androidbase.genmodel"/>
+   </extension>
 </plugin>

@@ -1,4 +1,4 @@
-#Thu Dec 22 15:12:22 COT 2022
+#Tue Jan 31 15:37:57 COT 2023
 rulergrid.snaptogeometry=true
 zoom=1.0
 print.margin.right=0.5
@@ -17,3 +17,4 @@ print.margin.top=0.5
 print.useMillim=true
 rulergrid.viewrulers=true
 print.usePortrait=true
+viewport.y=177

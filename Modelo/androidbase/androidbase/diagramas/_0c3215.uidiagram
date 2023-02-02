@@ -41,7 +41,7 @@
           </listModelElementCore>
         </listIndividualWidge>
         <listIndividualWidge xmi:type="tooldataform.ui:ImageView" xmi:id="_O5IlkIIzEe2QP7-HcaId4g" name="usuario" nameVar="usuario" stateFigure="No_mostrarMensaje" width="103" height="42" positionX="18" positionY="19" sourceCode="" idWidget="_O5LB0IIzEe2QP7-HcaId4g"/>
-        <listIndividualWidge xmi:type="tooldataform.ui:ImageView" xmi:id="_O5M3AIIzEe2QP7-HcaId4g" name="contrasena" nameVar="contrasena" stateFigure="No_mostrarMensaje" width="96" height="40" positionX="18" positionY="60" sourceCode="" idWidget="_O5PTQIIzEe2QP7-HcaId4g"/>
+        <listIndividualWidge xmi:type="tooldataform.ui:ImageView" xmi:id="_O5M3AIIzEe2QP7-HcaId4g" name="contrasena" nameVar="contrasena" stateFigure="No_mostrarMensaje" width="103" height="40" positionX="18" positionY="60" sourceCode="" idWidget="_O5PTQIIzEe2QP7-HcaId4g"/>
       </listGraphicalContainerWidget>
     </theUserInterface>
   </tooldataform.ui:UI_Diagram>
@@ -127,7 +127,7 @@
               <styles xmi:type="notation:DescriptionStyle" xmi:id="_O5M3AoIzEe2QP7-HcaId4g"/>
               <styles xmi:type="notation:FontStyle" xmi:id="_O5M3A4IzEe2QP7-HcaId4g" fontName="Segoe UI"/>
               <styles xmi:type="notation:FillStyle" xmi:id="_O5M3BIIzEe2QP7-HcaId4g"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O5M3BYIzEe2QP7-HcaId4g" x="18" y="60" width="96" height="40"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O5M3BYIzEe2QP7-HcaId4g" x="18" y="60" width="103" height="40"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_O4CZYYIzEe2QP7-HcaId4g"/>
