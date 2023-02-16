@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        final TextView helloTextView = (TextView) findViewById(R.id.text_view_id);
-        helloTextView.setText(R.string.user_greeting);
+//        final TextView helloTextView = (TextView) findViewById(R.id.text_view_id);
+//        helloTextView.setText(R.string.user_greeting);
 
 
 //        binding = ActivityMainBinding.inflate(getLayoutInflater());

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/widget_textCampo"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -9,27 +9,27 @@
     android:paddingRight="15dp"
     android:paddingTop="12dp">
 
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textViewBase"
+            android:id="@+id/textViewBasetest"
+            android:name="textViewBasetest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="3dp"
-            android:text="@string/usuario_email_login"
             android:textColor="@color/black"
             android:textSize="25sp"/>
+
 
     </LinearLayout>
 
     <EditText
         android:id="@+id/txtNombreUsuario"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="48dp"
         android:layout_marginTop="3dp"
         android:background="@drawable/edittextbg"
         android:ems="10"
@@ -38,5 +38,23 @@
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
         android:textColorHint="@color/gray" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_first" />
+
+    <TextView
+        android:id="@+id/textViewBasetestdos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"/>
 
 </LinearLayout>

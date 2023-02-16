@@ -23,6 +23,16 @@
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/LoginTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/LoginTestFragment"
+        android:name="androidbase.ui.viewparts.LoginTestFragment"
+        android:label="login_test"
+        tools:layout="@layout/widget_reutextcampo">
+
+        <action
+            android:id="@+id/action_Login_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
     </fragment>
 </navigation>
