@@ -27,9 +27,9 @@
     </fragment>
     <fragment
         android:id="@+id/LoginTestFragment"
-        android:name="androidbase.ui.viewparts.LoginTestFragment"
+        android:name="androidbase.ui.viewparts.loginviewpart.LoginViewPart"
         android:label="login_test"
-        tools:layout="@layout/widget_reutextcampo">
+        tools:layout="@layout/fragment_login">
 
         <action
             android:id="@+id/action_Login_to_SecondFragment"

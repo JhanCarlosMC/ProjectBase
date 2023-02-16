@@ -1,9 +1,10 @@
-package androidbase.ui.viewparts;
+package androidbase.ui.viewparts.loginviewpart;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,25 +14,29 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.ws_proyect_android.R;
-import com.example.ws_proyect_android.databinding.WidgetReutextcampoBinding;
+import com.example.ws_proyect_android.databinding.FragmentLoginBinding;
 
-public class LoginTestFragment extends Fragment {
+import androidbase.ui.viewmodels.loginviewmodel.LoginViewModel;
 
-    private WidgetReutextcampoBinding binding;
+public class LoginViewPart extends Fragment {
+
+    private FragmentLoginBinding binding;
+
+    private LoginViewModel loginTestViewModel;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        LoginTestViewModel loginTestViewModel = new ViewModelProvider(this).get(LoginTestViewModel.class);
+        loginTestViewModel = new ViewModelProvider(this).get(LoginViewModel.class);
 
-        binding = WidgetReutextcampoBinding.inflate(inflater, container, false);
+        binding = FragmentLoginBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textViewBasetest;
-        loginTestViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView labelUser = binding.labelUser;
+        loginTestViewModel.getLabelUser().observe(getViewLifecycleOwner(), labelUser::setText);
 
-        final TextView textView1 = binding.textViewBasetestdos;
-        loginTestViewModel.getText2().observe(getViewLifecycleOwner(),textView1::setText);
+        final EditText textUser = binding.textUser;
+        loginTestViewModel.getTextUser().observe(getViewLifecycleOwner(), textUser::setText);
 
         return root;
     }
@@ -42,8 +47,9 @@ public class LoginTestFragment extends Fragment {
         binding.buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(LoginTestFragment.this)
-                        .navigate(R.id.action_Login_to_SecondFragment);
+                loginTestViewModel.setTextUser("Ingrese el correo");
+//                NavHostFragment.findNavController(LoginViewPart.this)
+//                        .navigate(R.id.action_Login_to_SecondFragment);
             }
         });
     }
